@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+Mono:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <title>My Website Design Guide</title>
+
+    <!-- Fonts to be used: 
+                Inter
+                    Regular 400
+                    Bold    700
+                Poppins
+                    Regular 400
+                    Bold    500 -->
+</head>
+<body>
+    <head>
+        <div class="banner">
+            <h1>My Website Design Guide</h1>
+        </div>
+        
+    </head>
+    <main>
+        <!-- This section will be used for the color section -->
+        <!-- /*-- Colors to be used:  
+            #A8B3B5
+            #323536
+            #7AB7C1
+            #223336
+            #798182
+                    */-->
+        <section class="color_section">
+            <h2>Color Section</h2>
+            <div class="color_panel_container">
+                <div class="color_panel">
+                    <p class="color_palette" id="color1">#1</p>
+                    <p class="color_name">Light Supernintendo Gray</p>
+                    <p class="color_hex">#A8B3B5</p>
+                </div>
+                <div class="color_panel">
+                    <p class="color_palette" id="color2">#2</p>
+                    <p class="color_name">Brownish classy</p>
+                    <p class="color_hex">#323536</p>
+                </div>
+                <div class="color_panel">
+                    <p class="color_palette" id="color3">#3</p>
+                    <p class="color_name">Tainted Tiffany</p>
+                    <p class="color_hex">#7AB7C1</p>
+                </div>
+                <div class="color_panel">
+                    <p class="color_palette" id="color4">#4</p>
+                    <p class="color_name">Night Green</p>
+                    <p class="color_hex">#223336</p>
+                </div>               
+                <div class="color_panel">
+                    <p class="color_palette" id="color5">#5</p>
+                    <p class="color_name">Dark Supernintendo Gray</p>
+                    <p class="color_hex">#798182</p>
+                </div>
+                <p>Note: I used <a target="_blank" href="https://color.adobe.com/es/create/color-wheel">Adobe color palette tool</a> for selecting the colors.</p>  
+
+            <!-- **Obsolete** Use of unordered list to set the color palette. The intent is to use display inline and use the box model 
+            to make circles with the colors commentd for each list item. 
+            Color will match the background so it will only look like a circle-->
+            <!--<ul class="color_palette">
+                <li>
+                    Color1
+                </li>
+                <li>
+                    Color2
+                </li>
+                <li>
+                    Color3
+                </li>
+                <li>
+                    Color4
+                </li>
+                <li>
+                    Color 5  
+                </li>
+            </ul>  -->
+            <!-- Table didn't work as I wanted... idea discarded...
+             Shall we use a Table for the color palette? 
+            <table class="color_palette">
+                Table Header will have the color palette; I will use the box model for setting the color backgwond 
+                accordingly 
+                <tr>
+                    I'm setting an id for each color number so I can set the CSS rule individually 
+                    <td class="circles" id="Color1">#1</td>
+                    <td class="circles" id="Color2">#2</td>
+                    <td class="circles" id="Color3">#3</td>
+                    <td class="circles" id="Color4">#4</td>
+                    <td class="circles" id="Color5">#5</td>
+                </tr>
+                 Second row will have the Hexadecimal number matching the color of the header. 
+                <tr>
+                    <td>#A8B3B5</td>
+                    <td>#323536</td>
+                    <td>#7AB7C1</td>
+                    <td>#223336</td>
+                    <td>#798182</td>
+                </tr>                        
+            </table>
+             -->    
+
+  
+        </section>
+
+        <!-- This section is dedicated to the Font-Face specification -->
+        <section class="fonts">
+            <h2>Fonts</h2>
+            <!-- We'll be using one <div> for each block of text -->
+            <!-- I'm giving each <p> a class so I can select it at the styles.css file -->
+            <!-- The font_panel  font"X" is used to assign the font-family independently-->
+            <div class="font_panel font1">
+                <p class="H1_Font-fam">Inter - H1 Header</p>
+                <p class="normal_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="bold_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="emphasis_font-fam">Lorem ipsum dolor sit amet consectetur </p>    
+            </div>            
+            <div class="font_panel font2">
+                <p class="H1_Font-fam">Poppins - H2 Header</p>
+                <p class="normal_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="bold_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="emphasis_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+            </div>            
+            <div class="font_panel font3">
+                <p class="H1_Font-fam">Noto Sans Mono - Table Content</p>
+                <p class="normal_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="bold_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="emphasis_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+            <div class="font_panel font4">
+                <p class="H1_Font-fam">Open Sans - Paragraph Content</p>
+                <p class="normal_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="bold_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+                <p class="emphasis_font-fam">Lorem ipsum dolor sit amet consectetur </p>
+            </div>            
+        </section>
+        
+        <!-- This section is dedicated to the Text Styles -->
+        <section class="style_section">
+            <h2>Text Styles</h2>
+            <div class="style_panel H1_style">
+                <h1>Header H1</h1>
+                <ul>
+                    <li>Font-Weight: 700 Bold</li>
+                    <li>Font-Size:  26Px</li>
+                    <li>Font-Family: Inter, Sans-Serif</li>
+                </ul>
+            </div>
+            <div class="style_panel H2_style">
+                <h2>Header <kbd>H2</kbd></h2>
+                <ul>
+                    <li>Font-Weight: Normal</li>
+                    <li>Font-Size:  18Px</li>
+                    <li>Font-Family: Poppins, Sans-Serif</li>
+                </ul>
+            </div>
+            <div class="style_panel paragraph_style">
+                <p>Paragraph, list <kbd>p</kbd> <kbd>li</kbd></p>
+                <ul>
+                    <li>Font-Weight: Normal</li>
+                    <li>Font-Size:  14Px</li>
+                    <li>Font-Family: Open Sans, Sans-Serif</li>
+                </ul>
+            </div>
+            <!-- Table style has an id because I wanted to target specifically tha p element so I can assign the font-family of the table -->
+            <div class="style_panel paragraph_style">
+                <p id="table_style">Table <kbd>td</kbd></p>
+                <ul>
+                    <li>Font-Weight: Normal</li>
+                    <li>Font-Size:  14Px</li>
+                    <li>Font-Family: Noto Sans Mono, monospace;
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
